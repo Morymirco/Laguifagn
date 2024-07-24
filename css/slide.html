@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Slider</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+        }
+
+        .slider {
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            width: 500%;
+            animation: slide 2s infinite;
+        }
+
+        .slides img {
+            width: 20%;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            20% { transform: translateX(0%); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            95% { transform: translateX(-300%); }
+            100% { transform: translateX(-400%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <!-- <img src="https://via.placeholder.com/600x400/ff7f7f/333333?text=1" alt="Slide 1">
+            <img src="https://via.placeholder.com/600x400/7fbfff/333333?text=2" alt="Slide 2">
+            <img src="https://via.placeholder.com/600x400/7fff7f/333333?text=3" alt="Slide 3">
+            <img src="https://via.placeholder.com/600x400/ffff7f/333333?text=4" alt="Slide 4">
+            <img src="https://via.placeholder.com/600x400/bf7fff/333333?text=5" alt="Slide 5"> -->
+            <img src="../images/p1.jpg" alt="">
+            <img src="../images/p2.jpg" alt="">
+            <img src="../images/p3.jpg" alt="">
+            <img src="../images/p4.jpg" alt="">
+            <img src="../images/p5.jpg" alt="">
+            <img src="../images/p6.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
