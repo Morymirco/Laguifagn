@@ -145,7 +145,7 @@ input[type="checkbox"]:checked ~ .search-container {
 .home {
   width: 100%;
   min-height: 100vh;
-  background: no-repeat center / cover url("../images/home (1).webp");
+  background: no-repeat center / cover url("../images/home-_1.webp");
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
   align-items: center;
