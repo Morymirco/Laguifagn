@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +11,6 @@
   scroll-behavior: smooth;
 }
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #212121;
@@ -24,6 +24,14 @@ body {
   --accent: #001b1d;
   --accent-2: rgb(63, 40, 29);
   --shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.4);
+}
+::-webkit-scrollbar{
+  width: 0.5rem;
+  background: var(--light) ;
+}
+::-webkit-scrollbar-thumb{
+  width: 0.5rem;
+  background: #0092b0;
 }
 header {
   position: fixed;

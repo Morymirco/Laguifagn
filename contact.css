@@ -1,28 +1,7 @@
 :root {
-  /**
-   * colors
-   */
-
-  --raw-seinna: #001b1d;
-  --sizzling-sunrise: hsl(51, 95%, 54%);
-  --scarlet: hsl(13, 96%, 47%);
-  --black: hsl(0, 0%, 0%);
-  --white: hsl(0, 0%, 100%);
-
-  /**
-   * typography
-   */
-
-  --ff-saira-stencil-one: "Saira Stencil One", sans-serif;
-  --ff-poppins: "Poppins", sans-serif;
-  --ff-roboto: "Roboto", sans-serif;
-
-  --fs-1: 2rem;
   --fs-2: calc(1.813rem + 1vw);
   --fs-3: calc(1.313rem + 1vw);
-  --fs-4: 1.4rem;
   --fs-5: 1rem;
-  --fs-6: 0.813rem;
   --fs-7: 0.75rem;
 
   --fw-400: 400;
@@ -56,14 +35,20 @@
   --radius-12: 12px;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 *,
 *::before,
-*::after {
+*::after  {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  scroll-behavior: smooth;
 }
-
 li {
   list-style: none;
 }
@@ -72,16 +57,6 @@ a {
   text-decoration: none;
 }
 
-/* a,
-img,
-input,
-label,
-select,
-button,
-textarea,
-ion-icon {
-  display: block;
-} */
 
 input,
 button,
@@ -107,7 +82,7 @@ ion-icon {
 }
 
 :is(a, button, select) {
-  outline-color: var(--scarlet);
+  outline-color:  hsl(13, 96%, 47%);
   outline-offset: 3px;
 }
 
@@ -117,7 +92,6 @@ ion-icon {
 }
 
 html {
-  font-family: var(--ff-roboto);
   scroll-behavior: smooth;
 }
 .container {
@@ -137,7 +111,7 @@ body {
 .h3,
 .h4 {
   color: var(--color-primary);
-  font-family: var(--ff-poppins);
+  font-family: "Poppins", sans-serif;
   line-height: 1.2;
 }
 
@@ -167,7 +141,7 @@ body {
 
 .btn-primary {
   color: #fff;
-  border-color: var(--raw-seinna);
+  border-color: #001b1d;
 }
 
 .btn-primary:is(:hover, :focus) {
@@ -176,9 +150,9 @@ body {
 }
 
 .btn-secondary {
-  background: var(--raw-seinna);
-  border-color: var(--raw-seinna);
-  color: var(--black);
+  background: #001b1d;
+  border-color: #001b1d;
+  color: hsl(0, 0%, 0%);
 }
 
 .btn-secondary:is(:hover, :focus) {
@@ -217,9 +191,9 @@ body {
 .tooltip {
   position: absolute;
   top: -40px;
-  background: var(--raw-seinna);
+  background: #001b1d;
   min-width: max-content;
-  color: var(--white);
+  color: hsl(0, 0%, 100%);
   font-size: 15px;
   font-weight: var(--fw-700);
   padding: 5px 10px;
@@ -301,8 +275,8 @@ main {
 }
 
 .contact-social-link:is(:hover, :focus) {
-  background: var(--raw-seinna);
-  color: var(--white);
+  background: #001b1d;
+  color:hsl(0, 0%, 100%);
 }
 
 .contact-social-link:is(:hover, :focus) .tooltip {
@@ -324,7 +298,7 @@ main {
 .form-label {
   color: var(--color-primary);
   font-size: var(--fs-7);
-  font-family: var(--ff-poppins);
+  font-family: "Poppins", sans-serif;
   margin-bottom: 8px;
   margin-left: 5px;
 }
@@ -335,7 +309,7 @@ main {
 
 .input-field {
   background: var(--input-bg);
-  color: var(--raw-seinna);
+  color: #001b1d;
   padding: 10px;
   padding-left: 40px;
   border-radius: var(--radius-12);
@@ -363,7 +337,7 @@ textarea.input-field {
 }
 
 .input-field:focus + ion-icon {
-  color: var(--raw-seinna);
+  color: #001b1d;
 }
 
 .contact .btn-primary {
@@ -463,8 +437,8 @@ body.active {
 }
 
 .contact-social-link:is(:hover, :focus) {
-  background: var(--raw-seinna);
-  color: var(--white);
+  background: #001b1d;
+  color: hsl(0, 0%, 100%);
 }
 
 .contact-social-link:is(:hover, :focus) .tooltip {
@@ -486,7 +460,7 @@ body.active {
 .form-label {
   color: var(--color-primary);
   font-size: var(--fs-7);
-  font-family: var(--ff-poppins);
+  font-family: "Poppins", sans-serif;
   margin-bottom: 8px;
   margin-left: 5px;
 }
@@ -497,7 +471,7 @@ body.active {
 
 .input-field {
   background: var(--input-bg);
-  color: var(--raw-seinna);
+  color: #001b1d;
   padding: 10px;
   padding-left: 40px;
   border-radius: var(--radius-12);
@@ -525,7 +499,7 @@ textarea.input-field {
 }
 
 .input-field:focus + ion-icon {
-  color: var(--raw-seinna);
+  color: #001b1d;
 }
 
 .contact .btn-primary {
