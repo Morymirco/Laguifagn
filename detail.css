@@ -15,6 +15,7 @@ body {
   padding: 0;
   background-color: #212121;
   color: #f1f1f1;
+  overflow-x: hidden;
 }
 :root {
   --light: #f1f1f1;
@@ -368,4 +369,7 @@ footer img {
   text-align: center;
   font-size: 13px;
   background: var(--bg);
+}
+img{
+  object-fit: cover;
 }
