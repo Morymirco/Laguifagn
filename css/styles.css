@@ -677,6 +677,10 @@ img {
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
+  aspect-ratio: 16/9;
+}
+.deux{
+  display: none;
 }
 /* ######################### */
 /* Footer */
@@ -938,9 +942,13 @@ main {
 }
 /* DETAIL_Location */
 @media screen and (max-width: 768px) {
+  .deux{
+    display: none;
+  }
   .home {
     min-height: 60vh;
   }
+  
   header {
     padding: 12px 4%;
   }
@@ -1050,6 +1058,7 @@ main {
     display: none;
   }
 }
+
 @media screen and (max-width: 991px) {
   header {
     padding: 16px 4%;
@@ -1057,11 +1066,24 @@ main {
   section {
     padding: 50px 4%;
   }
+  .deux{
+    display: block;
+  }
   .slider-container {
     display: none;
   }
+  .home-content h1 {
+    font-size: clamp(30px, 4vw, 60px);
+    margin-top: 30px;
 }
-.body-location{
+.about-content h2 {
+  font-size: clamp(25px, 2vw, 35px);
+}
+.about-content p{
+  font-size: 0.7rem;
+}
+}
+main {
 padding: 0 30px;
 }
 
@@ -1070,9 +1092,20 @@ padding: 0 30px;
 #home, #house, #about, #locations, #reviews, #newsletter {
     padding: 60px 20px;
 }
+.sidebar{
+  display: none;
+}
+#heading-title {
+
+  margin-left: 0rem;
+}
   header {
     padding: 12px 4%;
   }
+  .heading h2 {
+    font-size: 1.1rem;
+    margin: 1rem;
+}
   #burger {
     color:#fff;
     display: block;
@@ -1132,5 +1165,11 @@ padding: 0 30px;
   .home-img {
     display: none;
     visibility: hidden;
+  }
+}
+@media screen and (max-width: 380px) {
+  .locations-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0;    gap: 1rem;
   }
 }
