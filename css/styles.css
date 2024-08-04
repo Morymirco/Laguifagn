@@ -499,6 +499,13 @@ img {
 .about-content p {
   margin: 1rem 0 2.3rem;
 }
+.location-box   a{
+  text-decoration: none;
+  color: #fff;
+}
+.links:visited{
+  color: #fff;
+}
 
 /* ######################### */
 /* ETAPES */

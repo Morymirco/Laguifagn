@@ -39,7 +39,9 @@ header {
   backdrop-filter: blur(10px);
   /* border-bottom:2px solid var(--accent); */
 }
-
+.mobile {
+  display: none;
+}
 header.active {
   background: var(--text);
 }
@@ -370,6 +372,62 @@ footer img {
   font-size: 13px;
   background: var(--bg);
 }
-img{
+img {
   object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    min-height: 60vh;
+  }
+  header {
+    padding: 12px 4%;
+  }
+  #burger {
+    display: block;
+  }
+  .navbar li:active .navbar {
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background: var(--text);
+    width: 100%;
+    row-gap: 1.5rem;
+    padding: 1rem 0;
+    display: none;
+  }
+
+  .marketer-profile {
+    margin: 30px auto;
+  }
+  .gallery-grid {
+    padding: 10px 20px;
+  }
+  .gallery h2 {
+
+    margin-left: 20px;
+}
+.property-info, .marketer-profile {
+ 
+  padding: 30px;
+}
+  .gallery-grid img {
+   
+    max-width: calc(50% - 10px);
+}
+  .logo {
+    font-size: 12px;
+  }
+
+  .footer-box .logo {
+    font-size: 1.5rem;
+  }
+  .nav-icons input[type="checkbox"]:checked .search-container {
+    left: 0;
+  }
 }
