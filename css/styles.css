@@ -10,6 +10,10 @@
   border: none;
   scroll-behavior: smooth;
 }
+::selection {
+  background:#c0e2ee;
+  color: hsl(0, 0%, 12%);
+}
 :root {
   --light: #f1f1f1;
   /* --light:#888888; */
@@ -116,7 +120,7 @@ header .bx {
 }
 
 .nav-icons .bx:hover {
-  color: var(--accent);
+  color: #c0e2ee;
 }
 .search-container {
   position: absolute;
@@ -547,6 +551,7 @@ img {
 }
 .house-container .box-car:hover {
   background: #001b1d;
+  /* background: linear-gradient(#0092b0 10%, #121212); */
 }
 .house-container .box-car:hover .bx {
   color: #c0e2ee;
@@ -733,6 +738,11 @@ footer img {
 
 .icons {
   color: #c0e2ee;
+  display: flex;
+    gap: 10px;
+}
+.icons span{
+  margin: 5px;
 }
 .text p {
   margin: 10px;
@@ -765,7 +775,7 @@ main {
   z-index: 10;
   border-radius: 10px;
   box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.4);
-  background-color: rgba(0, 128, 128, 0.5);
+  background: linear-gradient(#0092b0 10%, #121212);
 }
 #locations {
   padding: 3rem 0;
